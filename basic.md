@@ -71,7 +71,7 @@ ORDER BY year DESC
 LIMIT 4;
 ```
 
-![1579439102188](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1579439102188.png)
+![sql_eg_1](images/sql_eg_1.png)
 
 eg.
 
@@ -83,5 +83,5 @@ ORDER BY title ASC
 LIMIT 5 OFFSET 5;
 ```
 
-![1579439501637](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1579439501637.png)
+![sql_eg_2](images/sql_eg_2.png)
 
