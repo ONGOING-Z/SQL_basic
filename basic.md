@@ -36,3 +36,27 @@ WHERE condition
   AND/OR another_condition
 ```
 
+### 3. Filtering and sorting Query results
+- Unique results
+```
+SELECT DISTINCT column, another_column, ...
+FROM table_name
+WHERE condition(s)
+```
+- Ordering results
+```
+% Select query with ordered results
+SELECT column, another_column, ...
+FROM table_name
+WHERE condition(s)
+ORDER BY column ASC/DESC;
+```
+- Limiting results to a subset
+```
+% Select query with limited rows
+SELECT column, another_column, ...
+FROM table_name
+WHERE condition(s)
+ORDER BY column ASC/DESC
+LIMIT num_limit OFFSET num_offset
+```
