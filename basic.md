@@ -22,7 +22,7 @@ NOT IN (...) | col_name **NOT IN** (1, 3, 5)
 Operator | Condition | Example
 :-: | :-: | :-:
 LIKE | Case insensitive exact string comparison | col_name **LIKE** 'abc'
-NOT LIKE | Case insensitive exact string inequality comparison | col_name **NOT LIKE ** 'abc'**
+NOT LIKE | Case insensitive exact string inequality comparison | col_name **NOT LIKE ** 'abc'
 % | Match(only with LIKE or NOT LIKE | col_name **LIKE** '%hello%'
 _ | Used to match a single character(only with LIKE or NOT LIKE) | col_name **LIKE** "AN_"
 IN (...) | String exists in a list | col_name **IN** ("A", "B")
@@ -52,11 +52,36 @@ WHERE condition(s)
 ORDER BY column ASC/DESC;
 ```
 - Limiting results to a subset
-```
+```sql
 % Select query with limited rows
 SELECT column, another_column, ...
 FROM table_name
 WHERE condition(s)
 ORDER BY column ASC/DESC
-LIMIT num_limit OFFSET num_offset
+LIMIT num_limit OFFSET num_offset % offset偏移量
 ```
+
+eg.
+
+> List the last four Pixar movies released (ordered from most recent to least) 
+
+```
+SELECT * FROM movies
+ORDER BY year DESC
+LIMIT 4;
+```
+
+![1579439102188](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1579439102188.png)
+
+eg.
+
+> List the **next** five Pixar movies sorted alphabetically
+
+```SQL
+SELECT * FROM movies
+ORDER BY title ASC
+LIMIT 5 OFFSET 5;
+```
+
+![1579439501637](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1579439501637.png)
+
