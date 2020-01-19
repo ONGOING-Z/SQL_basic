@@ -1,11 +1,11 @@
 ### 1. SELECT
-```
+```SQL
 SELECT * FROM table_name;
 ```
 
 ### 2. Queries with constraints
 - WHERE clause
-```
+```sql
 SELECT column,...
 FORM table
 WHERE condition
@@ -29,7 +29,7 @@ IN (...) | String exists in a list | col_name **IN** ("A", "B")
 NOT IN (...) | String does not exit in a list | col_name **NOT IN** ("C", "E")
 <center>表2</center>
 
-```
+```sql
 SELECT column,...
 FORM table
 WHERE condition
@@ -38,13 +38,13 @@ WHERE condition
 
 ### 3. Filtering and sorting Query results
 - Unique results
-```
+```sql
 SELECT DISTINCT column, another_column, ...
 FROM table_name
 WHERE condition(s)
 ```
 - Ordering results
-```
+```sql
 % Select query with ordered results
 SELECT column, another_column, ...
 FROM table_name
@@ -65,7 +65,7 @@ eg.
 
 > List the last four Pixar movies released (ordered from most recent to least) 
 
-```
+```sql
 SELECT * FROM movies
 ORDER BY year DESC
 LIMIT 4;
