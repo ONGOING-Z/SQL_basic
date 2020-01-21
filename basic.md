@@ -85,3 +85,5 @@ LIMIT 5 OFFSET 5;
 
 ![sql_eg_2](images/sql_eg_2.png)
 
+### 4. Multi-table queries with JOINs
+
