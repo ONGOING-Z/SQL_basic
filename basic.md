@@ -86,4 +86,19 @@ LIMIT 5 OFFSET 5;
 ![sql_eg_2](images/sql_eg_2.png)
 
 ### 4. Multi-table queries with JOINs
+>JOIN clause
 
+- INNER JOIN
+```
+% Select query with INNER JOIN on multiple tables
+SELECT column, another_table_column, ...
+FROM mytable
+INNER JOIN another_table
+  ON mytable.id = another_table.id
+WHERE condition(s)
+ORDER BY column, ... ASC/DESC
+LIMIT num_limit OFFSET num_offset;
+```
+A process that matchs rows from the first table and the second table with 
+have the same key to create a result row with combined columns from both 
+tables.
