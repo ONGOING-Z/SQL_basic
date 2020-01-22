@@ -89,7 +89,7 @@ LIMIT 5 OFFSET 5;
 >JOIN clause
 
 - INNER JOIN
-```
+```sql
 % Select query with INNER JOIN on multiple tables
 SELECT column, another_table_column, ...
 FROM mytable
