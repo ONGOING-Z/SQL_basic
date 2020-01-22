@@ -102,3 +102,13 @@ LIMIT num_limit OFFSET num_offset;
 A process that matchs rows from the first table and the second table with 
 have the same key to create a result row with combined columns from both 
 tables.
+
+eg. 
+```sql
+SELECT title, rating
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id
+ORDER BY rating DESC;
+```
+
