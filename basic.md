@@ -138,3 +138,33 @@ LEFT JOIN employees
   ON buildings.building_name = employees.building
 ```
 
+
+
+### 6. A short note on NULLs
+
+> Test  a column for NULL values in a **WHERE** clause by using either **IS NULL** or **IS NOT NULL** constraint.
+
+```sql
+%Select query with constraints on NULL values
+SELECT column, another_column, ...
+FROM mytable
+WHERE column IS/IS NOT NULL
+AND/OR another_condition
+```
+
+eg. 
+
+> Find the names of the buildings that hold no employees.
+
+![sql_eg_4](images/sql_eg_4.png)
+
+```sql
+SELECT DISTINCT building_name
+FROM buildings 
+  LEFT JOIN employees
+    ON building_name = building
+WHERE role IS NULL;
+```
+
+*此题需要仔细思考一下*
+
