@@ -168,3 +168,21 @@ WHERE role IS NULL;
 
 *此题需要仔细思考一下*
 
+### 7. Queries with expressions
+
+```sql
+% Select query with expression aliases
+SELECT col_expression AS expr_description, ...
+FROM table;
+```
+
+```sql 
+% Example query with both column and table name aliases
+SELECT column AS better_column_name, ...
+FROM complex_table_name AS easy_table_name;
+```
+
+
+
+
+
