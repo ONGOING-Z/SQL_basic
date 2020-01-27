@@ -213,3 +213,15 @@ GROUP BY column;
 
 > The **GROUP BY** clause works by grouping rows that have the same value in the column specified.
 
+### 9.  Queries with aggregates (Pt. 2)
+
+```sql
+% Select query with HAVING constraint
+SELECT group_by_column, AGG_FUNC(column_expression) AS aggregate_result_alias, ...
+FROM table
+WHERE condition
+GROUP BY column
+HAVING group_condition;
+```
+
+> The **HAVING** clause constraints are applied to the grouped rows.
