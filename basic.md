@@ -225,3 +225,23 @@ HAVING group_condition;
 ```
 
 > The **HAVING** clause constraints are applied to the grouped rows.
+>
+> The `HAVING` clause constraints are written the same way as the `WHERE` clause constraints.
+
+eg.
+
+> Find the total number of years employed by all Engineers
+
+![sql_eg_5](images/sql_eg_5.png)
+
+```sql
+SELECT role, SUM(years_employed)
+FROM employees
+GROUP BY role
+HAVING role = "Engineer";
+```
+
+result
+
+![sql_eg_6](images/sql_eg_6.png)
+
