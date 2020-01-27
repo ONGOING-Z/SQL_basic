@@ -182,7 +182,34 @@ SELECT column AS better_column_name, ...
 FROM complex_table_name AS easy_table_name;
 ```
 
+### 8. Queries with aggregates(Pt.1)
 
+```sql
+% Select query with aggregate function over all rows
+SELECT AGG_FUNC(column_or_expression) AS aggregate_description, ...
+FROM table
+WHERE constraint_expression;
+```
 
+- Common aggregate functions
 
+| **Function** |
+| ------------ |
+| COUNT(*)     |
+| MIN(column)  |
+| MAX(column)  |
+| AVG(column)  |
+| SUM(column)  |
+
+- Grouped aggregate functions
+
+```sql
+% Select query with aggregate functions over groups
+SELECT AGG_FUNC(column_or_expression) AS aggregate_expression, ...
+FROM table
+WHERE constraint_expression
+GROUP BY column;
+```
+
+> The **GROUP BY** clause works by grouping rows that have the same value in the column specified.
 
