@@ -260,3 +260,30 @@ FROM table
   LIMIT count OFFSET count;
 ```
 
+### 11. Inserting rows
+
+> Inserting new data
+
+- Insert statement with values for all columns
+
+```sql
+INSERT INTO table
+VALUES (value_or_expr, another_value_or_expr, ...),
+       (value_or_expr_2, another_value_or_expr_2, ...),
+       ...;
+```
+
+- Insert statement with specific columns
+
+```sql
+INSERT INTO table
+(column, another_column, ...)
+VALUES (value_or_expr, another_value_or_expr, ...),
+       (value_or_expr_2, another_value_or_expr_2, ...),
+       ...;
+```
+
+*注意`string格式`的双引号*
+
+
+
