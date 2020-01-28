@@ -245,3 +245,18 @@ result
 
 ![sql_eg_6](images/sql_eg_6.png)
 
+### 10. Order of execution of a Query
+
+```sql
+% Complete SELECT query
+SELECT DISTINCT column, AGG_FUNC(column_or_expression), ...
+FROM table
+  JOIN another_table
+    ON table.column = another_table.column
+  WHERE constraint_expression
+  GROUP BY column
+  HAVING constraint_expression
+  ORDER BY column ASC/DESC
+  LIMIT count OFFSET count;
+```
+
