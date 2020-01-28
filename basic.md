@@ -299,5 +299,18 @@ SET column = value_or_expr,
 WHERE condition;
 ```
 
+*It's recommended that you run the constraint in a `SELECT` query first to ensure that you are removing the right rows.*
 
+### 13. Deleting rows
+
+> Delete data from a table in the database
+
+- Delete statement with condition
+
+```sql
+DELETE FROM table
+WHERE condition;
+```
+
+*It's recommended that you run the constraint in a `SELECT` query first to ensure that you are removing the right rows.*
 
