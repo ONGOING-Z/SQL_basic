@@ -285,5 +285,19 @@ VALUES (value_or_expr, another_value_or_expr, ...),
 
 *注意`string格式`的双引号*
 
+### 12. Updating rows
+
+> Update existing data
+
+- Update statement with values
+
+```sql
+UPDATE table
+SET column = value_or_expr, 
+    other_column = another_value_or_expr,
+    ...
+WHERE condition;
+```
+
 
 
