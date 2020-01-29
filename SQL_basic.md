@@ -396,3 +396,8 @@ DROP TABLE IF EXISTS table_name;
 ```
 
 *If you have another table that is dependent on columns in table you are removing (for example, with a `FOREIGN KEY` dependency) then you will have to either update all dependent tables first to remove the dependent rows or to remove those tables entirely.*
+
+
+
+<center>FINISHED: 20_1_29</center>
+
