@@ -360,3 +360,32 @@ CREATE TABLE movies (
 );
 ```
 
+### 15. Altering tables
+
+> Adding columns
+
+```sql
+% Altering table to add new column(s)
+ALTER TABLE	table_name
+ADD column DataType OptionalTableConstraint
+  DEFAULT default_value;
+```
+
+> Removing columns
+
+```sql
+% Altering table to remove column(s)
+ALTER TABLE table_name
+DROP column_to_be_deleted;
+```
+
+> Renaming the table
+
+```sql
+% Altering table name
+ALTER TABLE table_name
+RENAME TO new_table_name;
+```
+
+
+
