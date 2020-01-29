@@ -1,4 +1,7 @@
+
+
 ### 1. SELECT
+
 ```SQL
 SELECT * FROM table_name;
 ```
@@ -316,5 +319,44 @@ WHERE condition;
 
 ### 14. Creating tables
 
+- Create table statement
 
+```sql
+CREATE TABLE IF NOT EXISTS table_name (
+	column DataType TableConstraint DEFAULT default_value,
+    another_column DataType TableConstraint DEFAULT default_value,
+    ...
+);
+```
+
+> Table data types
+
+| Data type                | Description            |
+| ------------------------ | ---------------------- |
+| INTEGER, BOOLEAN         |                        |
+| FLOAT, DOUBLE, REAL      | precise numerical data |
+| CHARACTER, VARCHAR, TEXT |                        |
+| DATE, DATETIME           |                        |
+
+> Table constraints
+
+| Constraint           | Description                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| PRIMARY KEY          | This means that the values in this column are unique, and each value can be used to identify a single row in this table. |
+| AUTOINCEREMENT(自增) | For integer values, this means that the value is automatically filled in and incremented with each row insertion. |
+| UNIQUE               | The values in this column have to be unique                  |
+| NOT NULL             |                                                              |
+| FOREIGN KEY          | This is a consistency check which ensures that each value in this column corresponds to another value in a column in another table. |
+
+eg.
+
+```sql
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY,
+    title TEXT,
+    director TEXT,
+    year INTEGER, 
+    length_minutes INTEGER
+);
+```
 
